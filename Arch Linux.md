@@ -107,7 +107,6 @@
 - Gnome 4x UI Improvements
 - GSConnect
 - Input Method Panel
-- Just Perfection
 - Logo Menu
 - Lunar Calendar
 - Removable Drive Menu
