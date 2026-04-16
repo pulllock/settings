@@ -121,3 +121,11 @@
 
 - CHC-E(Custom Hot Corners-Extended): `yay -S gnome-shell-extension-custom-hot-corners-extended`
 - Unite: `yay -S gnome-shell-extension-unite`
+
+# Configurations
+
+- `~/.gitconfig`
+- `~/.ssh/config`
+- `~/.zshrc`
+- `~/.local/share/fcitx5/rime/default.custom.yaml`
+- `~/.local/share/fcitx5/rime/rime_ice.custom.yaml`
