@@ -113,6 +113,7 @@
 - Screenshot Window Sizer
 - User Themes
 - V-Shell
+- Quick Settings Tweaks
 
 ## System Extensions
 
