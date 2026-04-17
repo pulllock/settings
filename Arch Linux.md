@@ -114,6 +114,8 @@
 - User Themes
 - V-Shell
 - Quick Settings Tweaks
+- Copyous
+- Open Bar
 
 ## System Extensions
 
