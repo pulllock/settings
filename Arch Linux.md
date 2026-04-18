@@ -92,6 +92,11 @@
 	- 主题: 
 		- `yay -S plymouth-theme-arch-darwin plymouth-theme-arch-logo plymouth-theme-arch-logo-new plymouth-theme-arch-logo-gnomish plymouth-theme-arch-os`
 		- `yay -S plymouth-theme-archlinux`
+- Kodi: `yay -S kodi`
+- Waydroid: 
+	- `yay -S waydroid`
+	- `yay -S waydroid-script-git`
+	- `sudo waydroid-extras install libhoudini`
 
 # Gnome-Shell Extensions
 
