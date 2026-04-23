@@ -25,9 +25,11 @@
 		- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
 		- `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
 	- 重启终端
-- vitrualbox: `yay -S virtualbox`
+- vitrualbox: 
+	- `yay -S virtualbox-bin`
+	- `yay -S linux-headers`
 -  Mark Text: `yay -S marktext-appimg`
-- Obsidian: `yay -S obsidian`
+- Obsidian: `yay -S obsidian-bin`
 - Xournal++: `yay -S xournalpp`
 - jdk: `yay -S jdk17-openjdk`
 - jenv: 
@@ -45,7 +47,6 @@
 - maven: `yay -S maven`
 	- 设置settings.xml文件
 - MotrixNext: `yay -S motrix-next-bin`
-- imFile: `yay -S imfile-bin`
 - idea
 - datagrip
 - clion
@@ -56,14 +57,11 @@
 - foxit-reader: `yay -S foxitreader`
 - wps: `yay -S wps-office-cn`
 - snipaste: `yay -S snipaste`
-- copyq: `yay -S copyq`
 - input-remapper: `yay -S input-remapper-bin`
--  wacom-utilty
+- wacom-utilty
 - wacom-settings-git
-- wechat: `yay -S wechat`
+- wechat: `yay -S wechat-appimage`
 - QQ: `yay -S linuxqq-appimage`
-- 腾讯会议: `yay -S tencent-meeting`
-- telegram: `yay -S telegram-desktop`
 - Tor Broswer: `yay -S tor-broswer-bin`
 - VLC: 
 	- `yay -S vlc`
@@ -72,13 +70,10 @@
 - 百度云: `yay -S baidunetdisk-bin`
 - Charles: `yay -S charles-bundled-java`
 - Czkawka: `yay -S czkawka-gui-bin`
-- Scrcpy: `yay -S scrcpy`
-- Calibre: `yay -S calibre`
 - Tweaks: `yay -S gnome-tweaks`
 - fcitx5: 
 	- `yay -S fcitx5-im`
-	- `yay -S fcitx5-chinese-addons`
-	- `yay -S fcitx5-qt`
+	- `yay -S fcitx5-configtool`
 	- `yay -S fcitx5-gtk`
 	- 主题: 
 		- `yay -S fcitx5-mellow-themes-git`
@@ -96,6 +91,14 @@
 	- `yay -S waydroid`
 	- `yay -S waydroid-script-git`
 	- `sudo waydroid-extras install libhoudini`
+- Postman: `yay -S postman-bin`
+- Bochs: 
+	- `yay -S bochs`
+	- `yay -S bochs-gdb-stub`
+- NASM: `yay -S nasm`
+- 视频播放器：mpv
+	- `yay -S celluloid`
+- Scrcpy: `yay -S scrcpy`
 
 # Gnome-Shell Extensions
 
