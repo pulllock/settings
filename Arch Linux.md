@@ -1,5 +1,6 @@
 # Software
 
+- Apostrophe: `yay -S apostrophe`（markdown编辑器）
 - 百度云: `yay -S baidunetdisk-bin`
 - Bochs: 
 	- `yay -S bochs`
@@ -7,7 +8,9 @@
 - Charles: `yay -S charles-bundled-java`
 - Chrome/Chromium: `yay -S google-chrome`/`yay -S chromium`
 - Clash Verge: `yay -S clash-verge-rev-bin`
+- Cutter: `yay -S rz-cutter`
 - Czkawka: `yay -S czkawka-gui-bin`
+- dconf Editor: `yay -S dconf-editor`
 - Docker: `yay -S docker`
 - Fcitx5: 
 	- `yay -S fcitx5-im`
@@ -18,11 +21,14 @@
 		- `yay -S fcitx5-themes-macos-git`
 	- fcitx5-rime: `yay -S fcitx5-rime`
 		- 雾凇拼音: `yay -S rime-ice-git`
-- Foxit Reader: `yay -S foxitreader`
+- Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
 - Gnome Console: `yay -S gnome-console`
 - Go
+- Gradia: `yay -S gradia`（给截图/图片添加注释）
+	- `yay -S tesseract-data-chi_sim`
 - Grub Customizer: `yay -S grub-customizer`
 - Hiddify: `yay -S hiddify-app-bin`
+- ImHex: `yay -S imhex`
 - Input Remapper: `yay -S input-remapper-bin`
 - Jdk: `yay -S jdk17-openjdk`
 - Jenv: 
@@ -42,7 +48,6 @@
 	- DataGrip
 	- Intellij IDEA
 	- WebStorm
-- Mark Text: `yay -S marktext-appimg`
 - Maven: `yay -S maven`
 	- 设置settings.xml文件
 - MotrixNext: `yay -S motrix-next-bin`
@@ -60,7 +65,6 @@
 - Postman: `yay -S postman-bin`
 - QQ: `yay -S linuxqq-appimage`
 - Scrcpy: `yay -S scrcpy`
-- Snipaste: `yay -S snipaste`
 - Sublime Text: `yay -S sublime-text-4`
 - Telegram: `yay -S telegram-desktop`
 - TLP UI: `yay -S tlpui`
@@ -68,9 +72,7 @@
 - Tweaks: `yay -S gnome-tweaks`
 - V2ray: `yay -S v2ray`
 - V2rayN: `yay -S v2rayn-bin`
-- Vitrualbox: 
-	- `yay -S virtualbox-bin`
-	- `yay -S linux-headers`
+- Visual Studio Code: `yay -S visual-studio-code-bin`
 - Wacom Utilty
 - Wacom Settings
 - Waydroid: 
@@ -140,3 +142,47 @@
 - `~/.zshrc`
 - `~/.local/share/fcitx5/rime/default.custom.yaml`
 - `~/.local/share/fcitx5/rime/rime_ice.custom.yaml`
+- `~/.config/fontconfig/fonts.conf`
+
+# Boot
+
+## EFI
+
+- `Arch/`：Arch Linux启动路径
+	- `grubx64.efi`：Grub引导
+- `Boot/`：兜底启动路径
+	- `BootX64.efi`：UEFI规范定义的默认启动文件，和`Arch/grubx64.efi`是同一个文件
+- `Microsoft/`
+	- `Boot/`：Windows启动路径
+		- `bootmgrfw.efi`：Windows启动入口
+		- `BCD`：启动配置数据库
+
+## Boot
+
+- `efi/`：
+	- `EFI/`：EFI目录
+- `grub/`：GRUB目录
+	- `grub.cfg`：启动菜单配置
+	- `grubenv`
+	- `unicode.pf2`
+	- `fonts/`：字体
+	- `themes/`：主题
+	- `locale/`
+	- `x86_64-efi/`：GRUB模块
+- `initramfs-linux.img`：在内核真正挂载根文件系统之前加载驱动（磁盘、文件系统、NVMe、RAID），挂载root，切换到真实系统。
+- `initramfs-linux-fallback.img`：不依赖autodetect，包含更多驱动。
+- `intel-ucode.img`：CPU微码
+- `vmlinuz-linux`：linux内核
+
+## BIOS
+
+- BIOS启动项顺序：
+	- UEFI（兜底启动）
+	- Windows Boot Manager
+	- Arch
+- 启动Windows配置：
+	- Boot Configuration：Secure Boot设置为ON
+	- Storage：SATA/NVMe Operation设置为RAID On
+- 启动Arch Linux配置：
+	- Boot Configuration：Secure Boot设置为OFF
+	- Storage：SATA/NVMe Operation设置为AHCI/NVMe
