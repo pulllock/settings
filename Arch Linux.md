@@ -21,6 +21,10 @@
 		- `yay -S fcitx5-themes-macos-git`
 	- fcitx5-rime: `yay -S fcitx5-rime`
 		- 雾凇拼音: `yay -S rime-ice-git`
+		- 万象拼音基础版: 
+			- `yay -S rime-wanxiang-pinyin`
+			- `yay -S rime-wanxiang-sogou`
+- Foliate: `yay -S foliate`（EPUB阅读器）
 - Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
 - Gnome Console: `yay -S gnome-console`
 - Go
@@ -140,9 +144,17 @@
 - `~/.gitconfig`
 - `~/.ssh/config`
 - `~/.zshrc`
-- `~/.local/share/fcitx5/rime/default.custom.yaml`
-- `~/.local/share/fcitx5/rime/rime_ice.custom.yaml`
+- Rime custom configuration: `~/.local/share/fcitx5/rime/default.custom.yaml`
+- Rime Ice custom configuration: `~/.local/share/fcitx5/rime/rime_ice.custom.yaml`
+- Rime Wanxiang custom configuration: `~/.local/share/fcitx5/rime/wanxiang.custom.yaml`
 - `~/.config/fontconfig/fonts.conf`
+
+# Custom Shortcuts
+
+- Toggle Extension: Hide Top Bar
+	- Name: Toggle Extension: Hide Top Bar
+	- Command: `bash -c 'UUID="hidetopbar@mathieu.bidon.ca"; STATE=$(gnome-extensions info "$UUID" | grep "State" | awk "{print \$2}"); if [ "$STATE" == "ACTIVE" ]; then gnome-extensions disable "$UUID"; else gnome-extensions enable "$UUID"; fi'`
+	- Shortcut: `Super + \``
 
 # Boot
 
