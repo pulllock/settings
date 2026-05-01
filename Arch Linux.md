@@ -76,6 +76,7 @@
 - Tweaks: `yay -S gnome-tweaks`
 - V2ray: `yay -S v2ray`
 - V2rayN: `yay -S v2rayn-bin`
+- Visual Paradigm CE: `yay -S visual-paradigm-community`
 - Visual Studio Code: `yay -S visual-studio-code-bin`
 - Wacom Utilty
 - Wacom Settings
