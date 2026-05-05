@@ -20,7 +20,6 @@
 		- `yay -S fcitx5-mellow-themes-git`
 		- `yay -S fcitx5-themes-macos-git`
 	- fcitx5-rime: `yay -S fcitx5-rime`
-		- 雾凇拼音: `yay -S rime-ice-git`
 		- 万象拼音基础版: 
 			- `yay -S rime-wanxiang-pinyin`
 			- `yay -S rime-wanxiang-sogou`
@@ -146,7 +145,6 @@
 - `~/.ssh/config`
 - `~/.zshrc`
 - Rime custom configuration: `~/.local/share/fcitx5/rime/default.custom.yaml`
-- Rime Ice custom configuration: `~/.local/share/fcitx5/rime/rime_ice.custom.yaml`
 - Rime Wanxiang custom configuration: `~/.local/share/fcitx5/rime/wanxiang.custom.yaml`
 - `~/.config/fontconfig/fonts.conf`
 
