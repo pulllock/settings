@@ -1,36 +1,45 @@
 # Software
 
-- Apostrophe: `yay -S apostrophe`（markdown编辑器）
+Software and Package management:
+
+- yay: `sudo pacman -S yay`
+- CN keyring: `sudo pacman -S archlinuxcn-keyring`
+- Flatpak: `yay -S flatpak`
+- Flathub Mirror: `sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub`
+
+Software:
+
+- Android Studio: 手动安装到 `/opt`
+- Apostrophe（Markdown编辑器）
+- Audio Player (Decibels)
+- Aurynk（手机镜像到电脑）
 - 百度云: `yay -S baidunetdisk-bin`
 - Bochs: 
 	- `yay -S bochs`
 	- `yay -S bochs-gdb-stub`
 - Charles: `yay -S charles-bundled-java`
-- Chrome/Chromium: `yay -S google-chrome`/`yay -S chromium`
+- Chrome: `yay -S google-chrome`
 - Clash Verge: `yay -S clash-verge-rev-bin`
 - Cutter: `yay -S rz-cutter`
 - Czkawka: `yay -S czkawka-gui-bin`
 - dconf Editor: `yay -S dconf-editor`
 - Docker: `yay -S docker`
-- Fcitx5: 
+- Extension Manager
+- Fcitx 5: 
 	- `yay -S fcitx5-im`
-	- `yay -S fcitx5-configtool`
-	- `yay -S fcitx5-gtk`
 	- 主题: 
 		- `yay -S fcitx5-mellow-themes-git`
-		- `yay -S fcitx5-themes-macos-git`
 	- fcitx5-rime: `yay -S fcitx5-rime`
 		- 万象拼音基础版: 
 			- `yay -S rime-wanxiang-pinyin`
-			- `yay -S rime-wanxiang-sogou`
-- Foliate: `yay -S foliate`（EPUB阅读器）
+- Firefox: `yay -S firefox-nightly-bin`, `yay -S firefox-developer-edition`
+- Flatseal
+- Foliate（EPUB阅读器）
 - Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
 - Gnome Console: `yay -S gnome-console`
 - Go
-- Gradia: `yay -S gradia`（给截图/图片添加注释）
-	- `yay -S tesseract-data-chi_sim`
+- Gradia（给截图/图片添加注释）
 - Grub Customizer: `yay -S grub-customizer`
-- Hiddify: `yay -S hiddify-app-bin`
 - ImHex: `yay -S imhex`
 - Input Remapper: `yay -S input-remapper-bin`
 - Jdk: `yay -S jdk17-openjdk`
@@ -46,7 +55,7 @@
 	- 配置全局使用的jdk版本： `jenv global xxxx`
 	- 配置本地目录的版本： `jenv local xxx`
 	- 配置shell实例的版本： `jenv shell xxxx`
-- JetBrains IDEs: 
+- JetBrains IDEs: 手动安装到 `/opt`
 	- CLion
 	- DataGrip
 	- Intellij IDEA
@@ -54,27 +63,24 @@
 - Maven: `yay -S maven`
 	- 设置settings.xml文件
 - MotrixNext: `yay -S motrix-next-bin`
-- 视频播放器：MPV
-	- `yay -S celluloid`
+- Music
 - MySQL: `yay -S mysql`
 	- root/12345678
 - NASM: `yay -S nasm`
 - Obsidian: `yay -S obsidian-bin`
 - pCloud: `yay -S pcloud-drive`
+- PeaZip: `yay -S peazip`
 - Plymouth: `yay -S plymouth`
 	- 主题: 
 		- `yay -S plymouth-theme-arch-darwin plymouth-theme-arch-logo plymouth-theme-arch-logo-new plymouth-theme-arch-logo-gnomish plymouth-theme-arch-os`
 		- `yay -S plymouth-theme-archlinux`
 - Postman: `yay -S postman-bin`
 - QQ: `yay -S linuxqq-appimage`
-- Scrcpy: `yay -S scrcpy`
+- Video Player (Showtime)
 - Sublime Text: `yay -S sublime-text-4`
-- Telegram: `yay -S telegram-desktop`
+- Telegram
 - TLP UI: `yay -S tlpui`
-- Tor Broswer: `yay -S tor-broswer-bin`
 - Tweaks: `yay -S gnome-tweaks`
-- V2ray: `yay -S v2ray`
-- V2rayN: `yay -S v2rayn-bin`
 - Visual Paradigm CE: `yay -S visual-paradigm-community`
 - Visual Studio Code: `yay -S visual-studio-code-bin`
 - Wacom Utilty
@@ -84,7 +90,7 @@
 	- `yay -S waydroid-script-git`
 	- `sudo waydroid-extras install libhoudini`
 - Wechat: `yay -S wechat-appimage`
-- Wps: `yay -S wps-office-cn`
+- WPS 365: `yay -S wps-office-365`, `yay -S wps-office-365-fonts`
 - Xournal++: `yay -S xournalpp`
 - Zsh:  
 	- 安装： `yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions autojump`
@@ -109,9 +115,8 @@
 
 ## User Extensions
 
-通过`https://extensions.gnome.org/`进行安装。
+通过 Extension Manager或 `https://extensions.gnome.org/`进行安装。
 
-- Add to Desktop
 - AppIndicator and KStatusNotifierItem Support
 - Astra Monitor
 - Blur my Shell
@@ -121,12 +126,8 @@
 - Gnome 4x UI Improvements
 - GSConnect
 - Hide Top Bar
-- Input Method Panel
 - Just Perfection
-- Logo Menu
 - Lunar Calendar
-- Open Bar
-- Quick Settings Tweaks
 - Removable Drive Menu
 - Screenshot Window Sizer
 - User Themes
@@ -197,3 +198,24 @@
 - 启动Arch Linux配置：
 	- Boot Configuration：Secure Boot设置为OFF
 	- Storage：SATA/NVMe Operation设置为AHCI/NVMe
+
+# Firefox extensions
+
+- Authenticator
+- Dark Reader
+- Gnome Shell integration
+- Motrix Next Extension
+- Proxy SwitchyOmega 3
+- Tabliss
+- Tampermonkey
+
+# Chrome extensions
+
+- Authenticator
+- Caretab
+- Dark Reader
+- FireShot
+- Gnome Shell integration
+- Motrix Next Extension
+- Proxy SwitchyOmega 3
+- Tampermonkey
