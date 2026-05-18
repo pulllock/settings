@@ -4,27 +4,26 @@ Software and Package management:
 
 - yay: `sudo pacman -S yay`
 - CN keyring: `sudo pacman -S archlinuxcn-keyring`
-- Flatpak: `yay -S flatpak`
-- Flathub Mirror: `sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub`
 
 Software:
 
-- Android Studio: 手动安装到 `/opt`
-- Apostrophe（Markdown编辑器）
-- Audio Player (Decibels)
-- Aurynk（手机镜像到电脑）
-- 百度云: `yay -S baidunetdisk-bin`
-- Bochs: 
-	- `yay -S bochs`
-	- `yay -S bochs-gdb-stub`
-- Charles: `yay -S charles-bundled-java`
-- Chrome: `yay -S google-chrome`
+- Android Studio: Manual install to `/opt`
+- Apostrophe (Markdown editor): `yay -S apostrophe`
+- Audio Player (Decibels): `yay -S decibels`
+- Aurynk (Mirror phone to computer): `yay -S aurynk`
+- Baidu Net Disk: `yay -S baidunetdisk-bin`
+- Calculator: `yay -S gnome-calculator`
+- Calendar: `yay -S gnome-calendar`
+- Camera (Snapshot): `yay -S snapshot`
 - Clash Verge: `yay -S clash-verge-rev-bin`
-- Cutter: `yay -S rz-cutter`
-- Czkawka: `yay -S czkawka-gui-bin`
+- Console: `yay -S gnome-console``
 - dconf Editor: `yay -S dconf-editor`
+- Disks: `yay -S gnome-disk-utility`
+- Disk Usage Analyzer (Baobab): `yay -S baobab`
 - Docker: `yay -S docker`
-- Extension Manager
+- Document Viewer (Papers): `yay -S papers`
+- Extension Manager: `yay -S extension-manager`
+- Extensions
 - Fcitx 5: 
 	- `yay -S fcitx5-im`
 	- 主题: 
@@ -32,63 +31,52 @@ Software:
 	- fcitx5-rime: `yay -S fcitx5-rime`
 		- 万象拼音基础版: 
 			- `yay -S rime-wanxiang-pinyin`
+- File Roller: `yay -S file-roller`
+- Files
 - Firefox: `yay -S firefox-nightly-bin`, `yay -S firefox-developer-edition`
-- Flatseal
-- Foliate（EPUB阅读器）
+- Foliate（EPUB阅读器）: `yay -S foliate`
+- Fonts: `yay -S gnome-font-viewer`
 - Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
+- GNOME Color Manager: `yay -S gnome-color-manager`
 - Gnome Console: `yay -S gnome-console`
-- Go
-- Gradia（给截图/图片添加注释）
-- Grub Customizer: `yay -S grub-customizer`
-- ImHex: `yay -S imhex`
-- Input Remapper: `yay -S input-remapper-bin`
-- Jdk: `yay -S jdk17-openjdk`
-- Jenv: 
-	- 安装： `yay -S jenv`
-	- 验证： `jenv doctor`
-	- zsh配置： `echo 'eval "$(jenv init -)"' >> ~/.zshrc`
-	- 启用export插件： 
-		- `jenv enable-plugin export`
-		- `exec $SHELL -l`
-	- 添加jdk到jenv： `jenv add /usr/lib/jvm/java-17-openjdk`
-	- 查看管理的jdk版本： `jenv versions`
-	- 配置全局使用的jdk版本： `jenv global xxxx`
-	- 配置本地目录的版本： `jenv local xxx`
-	- 配置shell实例的版本： `jenv shell xxxx`
+- Google Chrome: `yay -S google-chrome`
+- Gradia（给截图/图片添加注释）: `yay -S gradia`
+- Image Viewer (loupe): `yay -S loupe`
+- JDK: `yay -S jdk25-openjdk`
 - JetBrains IDEs: 手动安装到 `/opt`
 	- CLion
 	- DataGrip
 	- Intellij IDEA
 	- WebStorm
-- Maven: `yay -S maven`
-	- 设置settings.xml文件
-- MotrixNext: `yay -S motrix-next-bin`
-- Music
-- MySQL: `yay -S mysql`
-	- root/12345678
-- NASM: `yay -S nasm`
+- Logs: `yay -S gnome-logs`
+- Motrix Next: `yay -S motrix-next-bin`
+- Music: `yay -S gnome-music`
+- Noto Fonts: `yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra`
 - Obsidian: `yay -S obsidian-bin`
-- pCloud: `yay -S pcloud-drive`
+- Passwords and Keys: `yay -S seahorse`
 - PeaZip: `yay -S peazip`
 - Plymouth: `yay -S plymouth`
 	- 主题: 
 		- `yay -S plymouth-theme-arch-darwin plymouth-theme-arch-logo plymouth-theme-arch-logo-new plymouth-theme-arch-logo-gnomish plymouth-theme-arch-os`
 		- `yay -S plymouth-theme-archlinux`
-- Postman: `yay -S postman-bin`
 - QQ: `yay -S linuxqq-appimage`
 - Video Player (Showtime)
+- Settings
 - Sublime Text: `yay -S sublime-text-4`
-- Telegram
+- System Monitor
+- Telegram: `yay -S telegram-desktop`
+- Terminator: `yay -S terminator`
+- Text Editor: `yay -S gnome-text-editor`
 - TLP UI: `yay -S tlpui`
 - Tweaks: `yay -S gnome-tweaks`
+- Video Player (Showtime): `yay -S showtime`
+- Vim: `yay -S vim`
 - Visual Paradigm CE: `yay -S visual-paradigm-community`
-- Visual Studio Code: `yay -S visual-studio-code-bin`
-- Wacom Utilty
-- Wacom Settings
 - Waydroid: 
 	- `yay -S waydroid`
 	- `yay -S waydroid-script-git`
 	- `sudo waydroid-extras install libhoudini`
+- Web (Epiphany): `yay -S epiphany`
 - Wechat: `yay -S wechat-appimage`
 - WPS 365: `yay -S wps-office-365`, `yay -S wps-office-365-fonts`
 - Xournal++: `yay -S xournalpp`
@@ -123,6 +111,7 @@ Software:
 - Copyous
 - Customize Clock on Lock Screen
 - Dash to Dock
+- Extension List
 - Gnome 4x UI Improvements
 - GSConnect
 - Hide Top Bar
