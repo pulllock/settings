@@ -1,11 +1,17 @@
+# System Information
+
+- OS Name: Arch Linux
+- OS Type: 64 bit
+- Desktop Environment: GNOME
+- Windowing System: Wayland
 # Software
 
-Software and Package management:
+## Software and Package management
 
 - yay: `sudo pacman -S yay`
 - CN keyring: `sudo pacman -S archlinuxcn-keyring`
 
-Software:
+## Software (Installed)
 
 - Android Studio: Manual install to `/opt`
 - Apostrophe (Markdown editor): `yay -S apostrophe`
@@ -15,7 +21,7 @@ Software:
 - Calculator: `yay -S gnome-calculator`
 - Calendar: `yay -S gnome-calendar`
 - Camera (Snapshot): `yay -S snapshot`
-- Clash Verge: `yay -S clash-verge-rev-bin`
+- Clash Party: `yay -S mihomo-party-bin`
 - Console: `yay -S gnome-console``
 - dconf Editor: `yay -S dconf-editor`
 - Disks: `yay -S gnome-disk-utility`
@@ -34,24 +40,24 @@ Software:
 - File Roller: `yay -S file-roller`
 - Files
 - Firefox: `yay -S firefox-nightly-bin`, `yay -S firefox-developer-edition`
-- Foliate（EPUB阅读器）: `yay -S foliate`
+- Foliate（E-Book reader）: `yay -S foliate`
 - Fonts: `yay -S gnome-font-viewer`
 - Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
 - GNOME Color Manager: `yay -S gnome-color-manager`
 - Gnome Console: `yay -S gnome-console`
 - Google Chrome: `yay -S google-chrome`
-- Gradia（给截图/图片添加注释）: `yay -S gradia`
+- Gradia（给截图/图片添加注释）: `yay -S gradia tesseract-data-chi_sim tesseract-data-eng`
 - Image Viewer (loupe): `yay -S loupe`
 - JDK: `yay -S jdk25-openjdk`
-- JetBrains IDEs: 手动安装到 `/opt`
+- JetBrains IDEs: Manual install to `/opt`
 	- CLion
 	- DataGrip
 	- Intellij IDEA
 	- WebStorm
+- Libreoffice: `yay -S libreoffice-fresh`
 - Logs: `yay -S gnome-logs`
 - Motrix Next: `yay -S motrix-next-bin`
 - Music: `yay -S gnome-music`
-- Noto Fonts: `yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra`
 - Obsidian: `yay -S obsidian-bin`
 - Passwords and Keys: `yay -S seahorse`
 - PeaZip: `yay -S peazip`
@@ -59,7 +65,7 @@ Software:
 	- 主题: 
 		- `yay -S plymouth-theme-arch-darwin plymouth-theme-arch-logo plymouth-theme-arch-logo-new plymouth-theme-arch-logo-gnomish plymouth-theme-arch-os`
 		- `yay -S plymouth-theme-archlinux`
-- QQ: `yay -S linuxqq-appimage`
+- QQ: `yay -S linuxqq`
 - Video Player (Showtime)
 - Settings
 - Sublime Text: `yay -S sublime-text-4`
@@ -71,14 +77,13 @@ Software:
 - Tweaks: `yay -S gnome-tweaks`
 - Video Player (Showtime): `yay -S showtime`
 - Vim: `yay -S vim`
-- Visual Paradigm CE: `yay -S visual-paradigm-community`
+- Visual Paradigm CE: Manual install to `~/Applications`
 - Waydroid: 
 	- `yay -S waydroid`
 	- `yay -S waydroid-script-git`
 	- `sudo waydroid-extras install libhoudini`
 - Web (Epiphany): `yay -S epiphany`
-- Wechat: `yay -S wechat-appimage`
-- WPS 365: `yay -S wps-office-365`, `yay -S wps-office-365-fonts`
+- Wechat: `yay -S wechat-bin`
 - Xournal++: `yay -S xournalpp`
 - Zsh:  
 	- 安装： `yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions autojump`
@@ -98,6 +103,49 @@ Software:
 			- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
 			- `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
 		- 重启终端
+
+## Software (Marked)
+
+Flatpak: 
+
+- Flatpak: `yay -S flatpak`
+- Flathub Mirror: `sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub`
+- Flatseal
+
+Common Software: 
+
+- Bochs: 
+	- `yay -S bochs`
+	- `yay -S bochs-gdb-stub`
+- Charles: `yay -S charles-bundled-java`
+- Cutter: `yay -S rz-cutter`
+- Czkawka: `yay -S czkawka-gui-bin`
+- Grub Customizer: `yay -S grub-customizer`
+- ImHex: `yay -S imhex`
+- Input Remapper: `yay -S input-remapper-bin`
+- Jenv:  `yay -S jenv`
+- Maven: `yay -S maven`
+- MySQL: `yay -S mysql`
+- NASM: `yay -S nasm`
+- pCloud: `yay -S pcloud-drive`
+- Postman: `yay -S postman-bin`
+- Sorftware: `yay -S gnome-software`
+- Visual Studio Code: `yay -S visual-studio-code-bin`
+- Wacom Utilty
+- Wacom Settings
+
+# Fonts
+
+- Microsoft Windows 11 TrueType fonts:
+	- Manual download ISO file to `~/.cacahe/yay/ttf-ms-win11/`
+	- Copy `install.wim` file from the ISO: `souce/install.wim` to `~/.cache/yay/ttf-ms-win11`
+	- Install `wimlib` package: `yay -S wimlib` 
+	- `wimextract ~/.cache/yay/ttf-ms-win11/install.wim 1 /Windows/{Fonts/"*".{ttf,ttc},System32/Licenses/neutral/"*"/"*"/license.rtf} --dest-dir ~/.cache/yay/ttf-ms-win11/`
+	- `yay -S --mflags "--skipchecksums" ttf-ms-win11`
+	- Copy the `.ttc` font files to `/usr/share/fonts/TTF`
+	- `sudo fc-cache -fv`
+- Noto Fonts: `yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji`
+- Source Han Sans / Serif: `yay -S adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts`
 
 # Gnome-Shell Extensions
 
@@ -127,7 +175,7 @@ Software:
 通过命令行安装。
 
 - CHC-E(Custom Hot Corners-Extended): `yay -S gnome-shell-extension-custom-hot-corners-extended`
-- Unite: `yay -S gnome-shell-extension-unite`
+- ~~Unite~~: `yay -S gnome-shell-extension-unite`
 
 # Configurations
 
@@ -208,3 +256,20 @@ Software:
 - Motrix Next Extension
 - Proxy SwitchyOmega 3
 - Tampermonkey
+
+# Settings
+
+## System Settings
+
+## Tweaks
+
+- Fonts:
+	- Preferred Fonts: 
+		- Interface Text: Adwaita Sans
+		- Document Text: Adwaita Sans
+		- Monospace Text: Adwaita Mono
+	- Redering:
+		- Hinting: Slight
+		- Antialiasing: Subpixel (for LCD screens)
+	- Size: 
+		- Scaling Factor: 1.20
