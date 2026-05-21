@@ -44,7 +44,6 @@
 - Fonts: `yay -S gnome-font-viewer`
 - Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
 - GNOME Color Manager: `yay -S gnome-color-manager`
-- Gnome Console: `yay -S gnome-console`
 - Google Chrome: `yay -S google-chrome`
 - Gradia（给截图/图片添加注释）: `yay -S gradia tesseract-data-chi_sim tesseract-data-eng`
 - Image Viewer (loupe): `yay -S loupe`
@@ -65,6 +64,7 @@
 	- 主题: 
 		- `yay -S plymouth-theme-arch-darwin plymouth-theme-arch-logo plymouth-theme-arch-logo-new plymouth-theme-arch-logo-gnomish plymouth-theme-arch-os`
 		- `yay -S plymouth-theme-archlinux`
+- Ptyxis: `yay -S ptyxis`
 - QQ: `yay -S linuxqq`
 - Video Player (Showtime)
 - Settings
@@ -85,24 +85,6 @@
 - Web (Epiphany): `yay -S epiphany`
 - Wechat: `yay -S wechat-bin`
 - Xournal++: `yay -S xournalpp`
-- Zsh:  
-	- 安装： `yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions autojump`
-	- 更改当前账户默认Shell： `chsh -s /usr/bin/zsh`
-	- 更改root用户默认Shell： `sudo chsh -s /usr/bin/zsh root`
-	- on-my-zsh
-		- 安装： `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`或者： `sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
-		- 安装Powerlevel10k主题： 
-			- `git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
-			- 到`～/.zshrc`文件中设置主题：`ZSH_THEME="powerlevel10k/powerlevel10k"`
-			- 重启终端
-		- 使用`p10k configure`进行配置，字体如果使用配置不能下载，可以手动下载安装后继续配置。
-		- 安装自动建议插件： 
-			- `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-			- 添加到`～/.zshrc`文件：plugins后面的括号中以空分割，添加：`zsh-autosuggestions`
-		- 安装语法高亮插件： 
-			- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
-			- `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
-		- 重启终端
 
 ## Software (Marked)
 
@@ -120,6 +102,7 @@ Common Software:
 - Charles: `yay -S charles-bundled-java`
 - Cutter: `yay -S rz-cutter`
 - Czkawka: `yay -S czkawka-gui-bin`
+- Gnome Console: `yay -S gnome-console`
 - Grub Customizer: `yay -S grub-customizer`
 - ImHex: `yay -S imhex`
 - Input Remapper: `yay -S input-remapper-bin`
@@ -133,6 +116,41 @@ Common Software:
 - Visual Studio Code: `yay -S visual-studio-code-bin`
 - Wacom Utilty
 - Wacom Settings
+
+## ZSH
+
+## ZSH
+
+- Install: `yay -S zsh`
+- Initial Zsh: 
+	- Run command: `zsh`
+	- Basic configuration options:
+		- (1) History
+			- History number in shell: `HISTSIZE=1000`
+			- History file: `HISTFILE=~/.zsh_history`
+			- History number in file: `SAVEHIST=1000`
+		- (2) New completion system
+			- (1)  Turn on completion with the default options.
+		- (3) Keys
+			- Emacs keymap
+		- (4) Common shell options
+			- Keep default configuration
+- Make Zsh as default shell: `chsh -s /usr/bin/zsh`
+- Plugins:
+	- zsh-autosuggestions: `yay -S zsh-autosuggestions`
+	- zsh-syntax-highlighting: `yay -S zsh-syntax-highlighting`
+	- zsh-completions: `yay -S zsh-completions`
+	- zoxide: `yay -S zoxide`
+
+## Nerd Font
+
+- JetBrains Mono Nerd Font: `yay -S ttf-jetbrains-mono-nerd`
+
+## Starship
+
+- Install: `yay -S starship`
+- Enable Starship: add `eval "$(starship init zsh)"` to `.zshrc` file.
+- Configuration, file: `~/.config/starship.toml`
 
 # Fonts
 
@@ -182,6 +200,7 @@ Common Software:
 - `~/.gitconfig`
 - `~/.ssh/config`
 - `~/.zshrc`
+- `~/.config/starship.toml`
 - Rime custom configuration: `~/.local/share/fcitx5/rime/default.custom.yaml`
 - Rime Wanxiang custom configuration: `~/.local/share/fcitx5/rime/wanxiang.custom.yaml`
 - `~/.config/fontconfig/fonts.conf`
