@@ -11,10 +11,31 @@
 - yay: `sudo pacman -S yay`
 - CN keyring: `sudo pacman -S archlinuxcn-keyring`
 
+Flatpak: 
+
+- Flatpak: `yay -S flatpak`
+- Flathub Mirror: `sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub`
+
 ## Software (Installed)
 
+### flatpak
+
+- Bitwarden (Password manage)
+- Document Viewer (Papers)
+- Flatseal (Flatpak app manage)
+- Foliate (E-Book reader)
+- Gradia（给截图/图片添加注释）, Language Models：`English, Chinese Simplified`
+- MarkText
+- PDF Arranger
+- QQ
+- Telegram
+- Video Player (Showtime)
+- Wechat
+
+### pacman
+
 - Android Studio: Manual install to `/opt`
-- Apostrophe (Markdown editor): `yay -S apostrophe`
+- Ant: `yay -S ant`
 - Audio Player (Decibels): `yay -S decibels`
 - Aurynk (Mirror phone to computer): `yay -S aurynk`
 - Baidu Net Disk: `yay -S baidunetdisk-bin`
@@ -27,27 +48,20 @@
 - Disks: `yay -S gnome-disk-utility`
 - Disk Usage Analyzer (Baobab): `yay -S baobab`
 - Docker: `yay -S docker`
-- Document Viewer (Papers): `yay -S papers`
 - Extension Manager: `yay -S extension-manager`
 - Extensions
-- Fcitx 5: 
-	- `yay -S fcitx5-im`
-	- 主题: 
-		- `yay -S fcitx5-mellow-themes-git`
-	- fcitx5-rime: `yay -S fcitx5-rime`
-		- 万象拼音基础版: 
-			- `yay -S rime-wanxiang-pinyin`
 - File Roller: `yay -S file-roller`
 - Files
-- Firefox: `yay -S firefox-nightly-bin`, `yay -S firefox-developer-edition`
-- Foliate（E-Book reader）: `yay -S foliate`
+- Firefox: `yay -S firefox-developer-edition`
 - Fonts: `yay -S gnome-font-viewer`
 - Gnome Boxes: `yay -S gnome-boxes`（虚拟机）
 - GNOME Color Manager: `yay -S gnome-color-manager`
 - Google Chrome: `yay -S google-chrome`
-- Gradia（给截图/图片添加注释）: `yay -S gradia tesseract-data-chi_sim tesseract-data-eng`
+- IBus: 
+	- ibus-rime: `yay -S ibus-rime`
+	- rime wanxiang basic version: `yay -S rime-wanxiang-pinyin`
 - Image Viewer (loupe): `yay -S loupe`
-- JDK: `yay -S jdk25-openjdk`
+- JDK: `yay -S jdk-openjdk`, `yay -S openjdk-src`
 - JetBrains IDEs: Manual install to `/opt`
 	- CLion
 	- DataGrip
@@ -65,17 +79,15 @@
 		- `yay -S plymouth-theme-arch-darwin plymouth-theme-arch-logo plymouth-theme-arch-logo-new plymouth-theme-arch-logo-gnomish plymouth-theme-arch-os`
 		- `yay -S plymouth-theme-archlinux`
 - Ptyxis: `yay -S ptyxis`
-- QQ: `yay -S linuxqq`
 - Video Player (Showtime)
 - Settings
+- Sorftware: `yay -S gnome-software`
 - Sublime Text: `yay -S sublime-text-4`
 - System Monitor
-- Telegram: `yay -S telegram-desktop`
 - Terminator: `yay -S terminator`
 - Text Editor: `yay -S gnome-text-editor`
 - TLP UI: `yay -S tlpui`
 - Tweaks: `yay -S gnome-tweaks`
-- Video Player (Showtime): `yay -S showtime`
 - Vim: `yay -S vim`
 - Visual Paradigm CE: Manual install to `~/Applications`
 - Waydroid: 
@@ -83,16 +95,9 @@
 	- `yay -S waydroid-script-git`
 	- `sudo waydroid-extras install libhoudini`
 - Web (Epiphany): `yay -S epiphany`
-- Wechat: `yay -S wechat-bin`
 - Xournal++: `yay -S xournalpp`
 
 ## Software (Marked)
-
-Flatpak: 
-
-- Flatpak: `yay -S flatpak`
-- Flathub Mirror: `sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub`
-- Flatseal
 
 Common Software: 
 
@@ -112,10 +117,12 @@ Common Software:
 - NASM: `yay -S nasm`
 - pCloud: `yay -S pcloud-drive`
 - Postman: `yay -S postman-bin`
-- Sorftware: `yay -S gnome-software`
+- QQ: `yay -S linuxqq`
+- Telegram: `yay -S telegram-desktop`
 - Visual Studio Code: `yay -S visual-studio-code-bin`
 - Wacom Utilty
 - Wacom Settings
+- Wechat: `yay -S wechat-bin`
 
 ## ZSH
 
@@ -171,29 +178,27 @@ Common Software:
 
 通过 Extension Manager或 `https://extensions.gnome.org/`进行安装。
 
-- AppIndicator and KStatusNotifierItem Support
+- ~~AppIndicator and KStatusNotifierItem Support~~
 - Astra Monitor
 - Blur my Shell
+- CHC-E(Custom Hot Corners-Extended)
 - Copyous
-- Customize Clock on Lock Screen
-- Dash to Dock
+- ~~Customize Clock on Lock Screen~~
+- ~~Dash to Dock~~
 - Extension List
-- Gnome 4x UI Improvements
 - GSConnect
 - Hide Top Bar
+- ~~Input Method Panel~~
 - Just Perfection
 - Lunar Calendar
 - Removable Drive Menu
-- Screenshot Window Sizer
+- ~~Unite~~
 - User Themes
 - V-Shell
 
 ## System Extensions
 
 通过命令行安装。
-
-- CHC-E(Custom Hot Corners-Extended): `yay -S gnome-shell-extension-custom-hot-corners-extended`
-- ~~Unite~~: `yay -S gnome-shell-extension-unite`
 
 # Configurations
 
@@ -210,7 +215,7 @@ Common Software:
 - Toggle Extension: Hide Top Bar
 	- Name: Toggle Extension: Hide Top Bar
 	- Command: `bash -c 'UUID="hidetopbar@mathieu.bidon.ca"; STATE=$(gnome-extensions info "$UUID" | grep "State" | awk "{print \$2}"); if [ "$STATE" == "ACTIVE" ]; then gnome-extensions disable "$UUID"; else gnome-extensions enable "$UUID"; fi'`
-	- Shortcut: `Super + \``
+	- Shortcut: `Alt + \``
 
 # Boot
 
@@ -258,6 +263,7 @@ Common Software:
 # Firefox extensions
 
 - Authenticator
+- Bitwarden Password Manager
 - Dark Reader
 - Gnome Shell integration
 - Motrix Next Extension
